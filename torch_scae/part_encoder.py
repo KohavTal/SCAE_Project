@@ -31,7 +31,7 @@ class BestEncoder(nn.Module):
                  strides,
                  activation=nn.ReLU,
                  activate_final=True,
-                 dropout = 0):
+                 dropout=0):
         super().__init__()
         self.network = BestStack(in_channels=input_shape[0],
                                    out_channels=out_channels,
